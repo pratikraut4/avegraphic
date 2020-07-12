@@ -1,0 +1,581 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  width:100%;
+  background-image: url('../images/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.navbar{
+  padding: 0px;
+  margin: 0px;
+}
+.navbar-nav{
+  text-align: center;
+}
+.bg-dark{
+  background-color:  transparent !important
+}
+.bg-dark.scrolled{
+  background-color:  transparent !important
+}
+
+.nav-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e2f906;
+  transition: width .3s;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+/* logo bg*/
+.navbar-brand {
+  width: 242px;
+  height: 90px;
+  background-color: #fff !important;
+  border-radius:0 0 6px 6px;
+  margin-left: 100px;
+}
+/*css for logo*/
+.navbar-brand img{
+  width: 175px;
+  height: 80px;
+  margin-left: 35px;
+}
+/*css for navbar text*/
+.nav-item a{
+  color: #ddef4c!important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* css for navbar toggler color*/
+/* Set the border color */
+
+.custom-toggler.navbar-toggler {
+    border-color: #a4b807;
+}
+/* Setting the stroke to green using rgb values (164, 184, 7, 1) */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(164, 184, 7, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M8 8h24M2 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+#maindiv{
+  overflow: hidden;
+}
+#headerbg{
+  height: 950px;
+  width : 90%;
+  background-color:#000000;
+  position: relative;
+  border-radius: 200px;
+  transform: rotate(20deg);
+  transform-origin: 120% 70%;
+  overflow: hidden;
+  padding-left: -50px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.carousel-caption{
+  transform: rotate(-20deg);
+  padding-bottom: 200px;
+  height: 500px;
+}
+input[type=button]{
+  height:50px;
+  background-color: #d43243;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  float: left;
+  margin-top: 20px;
+}
+input[type=button]:hover{
+  background-color:#d0d22d;
+  color: #fff;
+  background: #c2543d;
+
+}
+#headerbg h1{
+  color: #d0d22d;
+}
+#headerbg h2{
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size:40px;
+  line-height: 0.1;
+}
+#headerbg p{
+margin: 0;
+padding:0;
+letter-spacing:3px;
+}
+
+#headerbg img{
+  width : 2000px;
+  transform: rotate(-20deg);
+  opacity: 0.3;
+  object-fit: contain;
+  margin-left: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+/*about*/
+.aup{
+  height:2px;
+  width:50px;
+  background: #000000;
+  margin:0;
+  border:none;
+
+}
+.adown{
+  height:2px;
+  width:100px;
+  background:#000000;
+  margin:0;
+  border:none;
+  margin-top:3px;
+}
+
+#about{
+  margin: 0;
+  padding: 0;
+}
+#divs{
+  position: absolute;
+  transform: rotate(-10deg);
+  margin-top: 15px;
+  margin-left: 100px;
+}
+
+.srvimg{
+  height: 205px;
+  width: 90%;
+  border: 2px solid #e2f906;
+}
+
+
+
+
+#background{
+  height: 840px;
+  width: 93%;
+  background-color: #000000;
+  transform: rotate(10deg);
+  border-radius: 100px;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #fff;
+}
+#atext{
+  transform: rotate(-10deg);
+    margin-top:10px;
+    color: #fff;
+}
+#services{
+  margin-top:10px;
+}
+
+
+.bup{
+  height:2px;
+  width:50px;
+  background: #fff;
+  margin-left:45%;
+  border:none;
+  margin-top: 0;
+  margin-bottom: 0px;
+
+
+}
+.bdown{
+  height:2px;
+  width:100px;
+  background: #fff;
+  margin-left:43%;
+  border:none;
+  margin-top: 3px;
+
+}
+
+
+.teamimg{
+  height:150px;
+}
+#team{
+  margin-top: 200px;
+  height:600px;
+}
+.tup{
+  height:2px;
+  width:50px;
+  background: #000000;
+  border:none;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.tdown{
+  height:2px;
+  width:100px;
+  background: #000000;
+  border:none;
+  margin-top: 3px;
+
+}
+#footerbg{
+  height:720px;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#footer{
+  margin-top: 13%;
+  padding: 0;
+  left:0;
+  bottom:0;
+  height: 120%;
+  width: 97%;
+  background: #000020;
+  position: fixed;
+  position:relative;
+  overflow:hidden;
+  transform: rotate(-12deg);
+  transform-origin: 20%;
+  box-sizing: border-box;
+  border-radius: 200px;
+}
+#fotcont{
+  margin: 0;
+  padding: 0;
+  transform: rotate(12deg);
+  margin-top: 20px;
+  color: #fff;
+}
+#fotcont h1{
+
+  margin-bottom: 5px;
+}
+.cup{
+  height:2px;
+  width:50px;
+  background: #fff;
+  border:none;
+  margin-top: 0;
+  margin-bottom: 0px;
+
+
+}
+.cdown{
+  height:2px;
+  width:100px;
+  background: #fff;
+  border:none;
+  margin-top: 3px;
+}
+
+.phoneno{
+
+}
+.mail{
+   display: flex;
+    padding: 0;
+    margin-top: -50px;
+    color: #000000;
+}
+.flex{
+  background: #fff;
+  margin: 30px;
+  width: 240px;
+  border-radius: 8px;
+
+}
+
+.address h3{
+
+}
+.fline{
+  height:2px;
+  width:70%;
+  background: #fff;
+  border:none;
+
+}
+#fotimg{
+  height: 80px;
+  width: 200px;
+
+}
+#fotimg img{
+  height:100%;
+  width: 100%;
+  color: #fff;
+}
+.flist{
+  display:flex;
+  justify-content: center;
+
+}
+.flist > div {
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#copyrt{
+  justify-content: center;
+  margin:-10px;
+
+  font-size: 12px;
+}
+
+#myBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right:40px;
+  z-index:99;
+  border: none;
+  color:#fff;
+  background: #d43243;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#myBtn:hover{
+  background: #606060;
+}
+
+/* Media Query*/
+@media only screen and (min-width:830px) and (max-width:992px) {
+
+
+
+  #background{
+    transform: rotate(00deg);
+    margin-left: 34px;
+
+  }
+#footer{
+  transform: rotate(0deg);
+}
+#fotcont{
+  transform: rotate(0deg);
+}
+#atext{
+  transform: rotate(0deg);
+}
+
+#divs{
+  transform: rotate(0deg);
+  margin-left: 60px;
+}
+
+  }
+
+
+
+
+
+@media only screen and (max-width:480px){
+  .navbar-brand{
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  #headerbg{
+    height: 70vh;
+    width : 100%;
+    border-radius:60px;
+    transform-origin: 100% 50%;
+    transform: rotate(20deg);
+  }
+  #headerbg img{
+    width :300%;
+    height: 100%;
+    transform: rotate(-20deg);
+    object-fit: contain;
+  }
+  .carousel-caption{
+    padding-bottom: 0px ;
+    width: 300px;
+    transform: rotate(-20deg);
+  }
+  #headerbg h2{
+    font-weight:200;
+    letter-spacing: 3px;
+    font-size:30px;
+  }
+  #headerbg h1{
+    font-size:44px!important;
+  }
+  #headerbg p{
+    letter-spacing: 1px;
+  }
+  #background{
+    margin-top: 50px;
+    height:1600px;
+    width: 95%;
+    transform: rotate(00deg);
+    border-radius: 100px;
+    justify-content: center;
+    margin-left: 12px!important;
+  }
+  #atext{
+    transform: rotate(0deg);
+  }
+
+  #divs{
+    transform: rotate(0deg);
+    margin-left: 0px;
+  }
+
+  #team{
+    margin-top: 80px;
+  height: 105vh;
+  }
+
+  #footer{
+    transform: rotate(0deg);
+    border-radius: 100px;
+    justify-content: center;
+  }
+  #fotcont{
+    transform: rotate(0deg);
+}
+.phoneno{
+
+font-size: 16px;
+margin-bottom: 20px;
+}
+.mail{
+    display: block;
+
+    font-size: 16px;
+}
+#icons img{
+  margin-top: 20px;
+  width: 300px;
+}
+.address h3{
+  margin-top: 20px;
+  font-size: 16px;
+
+}
+.fline{
+  width:50%;
+
+}
+
+
+.flist > div {
+  font-size: 12px;
+  margin-top: 20px;
+
+  }
+#copyrt{
+  margin-top: 20px;
+}
+}
+
+@media only screen and (max-width:360px){
+  .carousel-caption{
+
+    width: 300px!important;
+
+  }
+  #headerbg h2{
+    font-weight:180;
+    letter-spacing: 3px;
+    font-size:22px;
+  }
+  #headerbg h1{
+    font-size:30px!important;
+  }
+
+#headerbg p{
+  font-size:10px;
+}
+  input[type=button]{
+    height:30px;
+    width: 100px;
+    padding:2px;
+
+    margin-top: 10px;
+    font-size: 8px;
+    text-align: center;
+  }
+  .carousel-caption{
+  padding-top: 40px
+
+  }
+  #background{
+
+    margin-left: 10px!important;
+  }
+  #footer{
+    margin-top: 200px;
+  }
+
+
+}
+
+@media only screen and  (max-width:768px){
+  #headerbg{
+    height: 85vh;
+    width : 100%;
+  }
+  .carousel-caption{
+    width: 800px;
+  }
+  #headerbg h1{
+    font-size:80px;
+    margin-top:10px;
+  }
+  #background{
+    transform: rotate(00deg);
+    margin-left: 20px
+  }
+  #atext{
+    transform: rotate(0deg);
+  }
+
+  #divs{
+    transform: rotate(0deg);
+    margin-left: 0px;
+  }
+
+
+}
+@media only screen and (min-width:995px) and (max-width:1280px) {
+  #divs{
+    margin-left: 40px;
+  }
+
+}
